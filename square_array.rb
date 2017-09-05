@@ -1,5 +1,8 @@
 def square_array(array)
-  array.collect |elem|
-    (elem * elem)
+  new_array = []
+  array.each do |elem|
+    new_array.push(elem * elem)
   end
+  return new_array
 end
+
